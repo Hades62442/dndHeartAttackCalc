@@ -3,7 +3,7 @@ import random
 def main():
     global reps
     amountDied = 0
-    days = 100
+    days = 40
     reps = 5000
     for i in range(reps):
         j = 0
@@ -23,7 +23,7 @@ def main():
 
 
 vals = []
-for i in range(10):
+for i in range(1000):
     amountDied = main()
     print(f"{amountDied/reps*100}%")
     vals.append(amountDied/reps*100)
